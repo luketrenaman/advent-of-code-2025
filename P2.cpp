@@ -1,0 +1,44 @@
+using namespace std;
+#include <bits/stdc++.h>
+
+ifstream infile("P2.txt");
+std::string line;
+bool isSafe(int a, int b){
+	int diff = abs(b-a);
+	return diff >= 1 && diff <= 3;
+}
+int main(){
+	int safeReports = 0;
+	while (std::getline(infile, line))
+	{
+		cout << "processing report: " << line << '\n';
+		bool safe = true;
+		std::istringstream iss(line);
+		int prev, current;
+		iss >> prev;
+		iss >> current;
+		bool decreasing = false;
+		if(prev < current) decreasing = false;
+		else if(prev > current) decreasing = true;
+		else{
+			// Unsafe but we continue processing anyways
+			safe = false;
+		}
+		if(!isSafe(prev,current)) safe = false;
+		while(!iss.eof()){
+			prev = current;
+			iss >> current;
+			if(!isSafe(prev,current)) safe = false;
+			if(prev == current) safe = false;
+			if(prev < current && decreasing) safe = false;
+			if(prev > current && !decreasing) safe = false;
+		}
+		if(safe){
+			 safeReports++;
+			 cout << "Safe\n";
+		} else{
+			cout << "Unsafe\n";
+		}
+	}
+	cout << safeReports;
+}
