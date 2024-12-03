@@ -1,4 +1,3 @@
-
 using namespace std;
 #include <bits/stdc++.h>
 
@@ -13,7 +12,7 @@ int main(){
 	while (std::getline(infile, line))
 	{
 		cout << "processing report: " << line << '\n';
-		int safe = 1;
+		int safe = 2;
 		std::istringstream iss(line);
 		int prev, current;
 		iss >> prev;
@@ -21,20 +20,20 @@ int main(){
 		bool decreasing = false;
 		if(prev < current) decreasing = false;
 		else if(prev > current) decreasing = true;
-		else if(prev==current){
+		else{
 			// Unsafe but we continue processing anyways
-			safe--;
+			safe-=2;
 		}
-		else if(!isSafe(prev,current)) safe--;
+		if(!isSafe(prev,current)) safe--;
 		while(!iss.eof()){
 			prev = current;
 			iss >> current;
 			if(!isSafe(prev,current)) safe--;
-			else if(prev == current) safe--;
-			else if(prev < current && decreasing) safe--;
-			else if(prev > current && !decreasing) safe--;
+			if(prev == current) safe = safe--;
+			if(prev < current && decreasing) safe = safe--;
+			if(prev > current && !decreasing) safe = safe--;
 		}
-		if(safe >= 0){
+		if(safe){
 			 safeReports++;
 			 cout << "Safe\n";
 		} else{
