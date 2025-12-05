@@ -5,72 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50c2dd90-810d-48d9-be66-e728e634f036" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day5.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day2Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day3Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day4Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day5Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day1/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day1/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day2/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day2/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day3/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day3/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day4/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day4/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day5/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day5/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day5/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/advent-of-code.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-1/P1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-1/P1-2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-1/P1-2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-1/P1.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-1/P1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-2/P2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-2/P2-2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-2/P2-2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-2/P2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-2/P2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-2/P2Sample.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-3/P3-2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-3/P3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2024/day-3/P3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day1/P1-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day1/P2-2025-naive.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day1/P2-2025-optimal.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day1/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day2/P1-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day2/P2-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day2/example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day2/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day3/P1-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day3/P2-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day3/example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day3/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day4/P1-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day4/P2-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day4/example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day4/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day5/P1-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day5/P2-2025.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day5/example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day5/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/day5/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/advent-of-code/META-INF/advent-of-code.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/advent-of-code/day1/P1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/advent-of-code/day1/P1_2025Kt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2/P2-2025.kts" beforeDir="false" afterPath="$PROJECT_DIR$/day2/P2-2025.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day2Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day2Test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +31,14 @@
   "keyToString": {
     "JUnit.Day1Test.Part 1 Example.executor": "Run",
     "JUnit.Day1Test.executor": "Run",
+    "JUnit.Day2Test.Sanity.executor": "Run",
+    "JUnit.Day2Test.executor": "Run",
     "JUnit.kotlin in aoc-2025.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/luketrenaman/Desktop/code/advent-of-code/src/test/resources/day5",
@@ -116,7 +57,7 @@
       <recent name="com.github.luketrenaman.aoc2025.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.kotlin in aoc-2025">
+  <component name="RunManager" selected="JUnit.Day2Test">
     <configuration name="Day1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc-2025" />
       <extension name="coverage">
@@ -148,6 +89,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc-2025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.luketrenaman.aoc2025.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.luketrenaman.aoc2025" />
+      <option name="MAIN_CLASS_NAME" value="com.github.luketrenaman.aoc2025.Day2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2Test.Sanity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc-2025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.luketrenaman.aoc2025.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.luketrenaman.aoc2025" />
+      <option name="MAIN_CLASS_NAME" value="com.github.luketrenaman.aoc2025.Day2Test" />
+      <option name="METHOD_NAME" value="Sanity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="kotlin in aoc-2025" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc-2025" />
       <option name="TEST_OBJECT" value="directory" />
@@ -158,7 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day2Test" />
         <item itemvalue="JUnit.kotlin in aoc-2025" />
+        <item itemvalue="JUnit.Day2Test.Sanity" />
         <item itemvalue="JUnit.Day1Test" />
         <item itemvalue="JUnit.Day1Test.Part 1 Example" />
       </list>
@@ -173,6 +147,17 @@
       <updated>1764956669649</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

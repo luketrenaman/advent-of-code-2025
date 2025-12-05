@@ -11,7 +11,7 @@ val ranges = File("input.txt").readLines().first()
 val ids = mutableSetOf<ULong>();
 
 for(j in 2..6) {
-    val max = 100000
+    val max = 10000
     for(i in 1..max) {
         if(log10(i.toDouble()) * j > 10){
             break;

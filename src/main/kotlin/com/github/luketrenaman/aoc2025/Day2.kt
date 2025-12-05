@@ -1,6 +1,7 @@
 package com.github.luketrenaman.aoc2025
 
 import java.io.File
+import kotlin.math.log10
 
 class Day2 {
     fun part1(input: File): Long {
@@ -31,27 +32,27 @@ class Day2 {
         }
         return sum
     }
-    fun part2(input: File): Long {
+    fun part2(input: File): ULong {
         val ranges = input.readLines().first()
             .split(',')
             .map{ range -> range.split('-')
-                .map{str -> str.toLong()}
+                .map{str -> str.toULong()}
             }.sortedBy { range -> range[0] }
-        val ids = mutableSetOf<Long>()
+        val ids = mutableSetOf<ULong>();
 
-        for(j in 2..6) {
-            val max = 100000
+        for(j in 2..12) {
+            val max = 1000000
             for(i in 1..max) {
-                if(kotlin.math.log10(i.toDouble()) * j > 10){
-                    break
+                if(log10(i.toDouble()) * j > 10){
+                    break;
                 }
-                ids.add(i.toString().repeat(j).toLong())
+                ids.add(i.toString().repeat(j).toULong())
             }
         }
 // We used a set to filter out duplicates, but now we need to iterate!
         val idList = ids.toList().sorted()
 
-        var sum = 0L;
+        var sum = 0UL;
         var nextIdToCheck = 0
         for (range in ranges) {
             while (idList[nextIdToCheck] < range[0]){
