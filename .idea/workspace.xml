@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50c2dd90-810d-48d9-be66-e728e634f036" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day6.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day6Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day6/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day6/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2/P2-2025.kts" beforeDir="false" afterPath="$PROJECT_DIR$/day2/P2-2025.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day2Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day2Test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +66,7 @@
       <recent name="com.github.luketrenaman.aoc2025.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day2Test">
+  <component name="RunManager" selected="JUnit.Day6Test">
     <configuration name="Day1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc-2025" />
       <extension name="coverage">
@@ -69,22 +78,6 @@
       <option name="PACKAGE_NAME" value="com.github.luketrenaman.aoc2025" />
       <option name="MAIN_CLASS_NAME" value="com.github.luketrenaman.aoc2025.Day1Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day1Test.Part 1 Example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc-2025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.luketrenaman.aoc2025.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.luketrenaman.aoc2025" />
-      <option name="MAIN_CLASS_NAME" value="com.github.luketrenaman.aoc2025.Day1Test" />
-      <option name="METHOD_NAME" value="Part 1 Example" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,6 +113,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day6Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc-2025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.luketrenaman.aoc2025.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.luketrenaman.aoc2025" />
+      <option name="MAIN_CLASS_NAME" value="com.github.luketrenaman.aoc2025.Day6Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="kotlin in aoc-2025" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc-2025" />
       <option name="TEST_OBJECT" value="directory" />
@@ -130,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day2Test" />
+        <item itemvalue="JUnit.Day6Test" />
         <item itemvalue="JUnit.kotlin in aoc-2025" />
+        <item itemvalue="JUnit.Day2Test" />
         <item itemvalue="JUnit.Day2Test.Sanity" />
         <item itemvalue="JUnit.Day1Test" />
-        <item itemvalue="JUnit.Day1Test.Part 1 Example" />
       </list>
     </recent_temporary>
   </component>
