@@ -29,5 +29,17 @@ class Day4Test {
             Day4().part2(File("src/test/resources/day4/input.txt"))
         )
     }
+    @Test fun `Part 2 Optimized Example`(){
+        assertEquals(
+            43,
+            Day4().part2Optimized(File("src/test/resources/day4/example.txt"))
+        )
+    }
+    @Test fun `Part 2 Optimized Solution`(){
+        assertEquals(
+            8707,
+            Day4().part2Optimized(File("src/test/resources/day4/input.txt"))
+        )
+    }
 }
 

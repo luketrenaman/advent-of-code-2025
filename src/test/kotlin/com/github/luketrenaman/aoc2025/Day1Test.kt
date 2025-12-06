@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.assertEquals
 import java.io.File
 
-
 class Day1Test {
     @Test fun `Part 1 Example`(){
         assertEquals(

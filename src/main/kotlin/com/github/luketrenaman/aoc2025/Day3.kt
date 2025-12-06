@@ -6,7 +6,7 @@ class Day3 {
     fun part1(input: File): Long {
         var answer = 0L
         input.forEachLine { line ->
-            var chars = line.trim().split("").filter{x -> x != ""}.map{x -> x.toInt()}
+            val chars = line.trim().split("").filter{x -> x != ""}.map{x -> x.toInt()}
             var first = 0
             for (i in 0 until chars.size-1){
                 if(chars[i] > chars[first]){
@@ -26,7 +26,7 @@ class Day3 {
     fun part2(input: File): Long {
         var answer = 0L
         input.forEachLine { line ->
-            var chars = line.trim().split("").filter{x -> x != ""}.map{x -> x.toInt()}
+            val chars = line.trim().split("").filter{x -> x != ""}.map{x -> x.toInt()}
             var lastIndex = 0
             var mult = 100000000000L
             // 987654321111

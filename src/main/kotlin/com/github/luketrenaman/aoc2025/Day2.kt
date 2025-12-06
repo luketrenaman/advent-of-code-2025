@@ -49,7 +49,7 @@ class Day2 {
                 ids.add(i.toString().repeat(j).toULong())
             }
         }
-// We used a set to filter out duplicates, but now we need to iterate!
+        // We used a set to filter out duplicates, but now we need to iterate!
         val idList = ids.toList().sorted()
 
         var sum = 0UL;
