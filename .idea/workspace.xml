@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="50c2dd90-810d-48d9-be66-e728e634f036" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day3.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day1Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day1Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day4Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day4Test.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/github/luketrenaman/aoc2025/Day4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/luketrenaman/aoc2025/Day4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/luketrenaman/aoc2025/Day1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/luketrenaman/aoc2025/Day1Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/luketrenaman/aoc2025/Day4Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/luketrenaman/aoc2025/Day4Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

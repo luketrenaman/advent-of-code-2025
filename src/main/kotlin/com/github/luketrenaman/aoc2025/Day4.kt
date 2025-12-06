@@ -96,7 +96,7 @@ class Day4 {
         fun checkAllNeighborPaper(i: Int, j: Int) =
             offsets.sumOf{ (k,m) -> checkNeighborPaper(i + k, j + m)}
         val counts = Array(rows) {Array(cols) {0} }
-        val remainingPaper = mutableSetOf<Pair<Int, Int>>()
+        val remainingPaper = mutableListOf<Pair<Int, Int>>()
         for (i in 0 until rows) {
             for (j in 0 until cols) {
                 if(grid[i][j] == "@") {
