@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50c2dd90-810d-48d9-be66-e728e634f036" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day7.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day7Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day7/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/example.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day8.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day8Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day8/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day8/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day9/example.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
   <component name="ProjectId" id="36R5iDbVv5YDPzkGccs8bIrOqoV" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,6 +61,7 @@
     "JUnit.Day4Test.executor": "Run",
     "JUnit.Day5Test.executor": "Run",
     "JUnit.Day6Test.executor": "Run",
+    "JUnit.Day7Test.executor": "Run",
     "JUnit.kotlin in aoc-2025.executor": "Run",
     "JUnit.resources in aoc-2025.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
