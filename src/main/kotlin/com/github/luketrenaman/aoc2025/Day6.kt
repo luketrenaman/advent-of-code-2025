@@ -33,7 +33,7 @@ class Day6 {
         return ans
     }
     fun part2(input: File): Long{
-        val input = input.readLines().map{"$it" }.toMutableList()
+        val input = input.readLines().map{ it }.toMutableList()
         val operators = input.removeLast().split("\\s+".toRegex())
         var ans = 0L
         var currentOperator = 0

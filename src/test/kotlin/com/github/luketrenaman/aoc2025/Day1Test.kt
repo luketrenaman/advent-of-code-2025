@@ -30,4 +30,16 @@ class Day1Test {
             6223
         )
     }
+    @Test fun `Part 2 Optimized Example`(){
+        assertEquals(
+            6,
+            Day1().part2Optimized(File("src/test/resources/day1/example.txt"))
+        )
+    }
+    @Test fun `Part 2 Optimized Solution`(){
+        assertEquals(
+            6223,
+            Day1().part2Optimized(File("src/test/resources/day1/input.txt"))
+        )
+    }
 }

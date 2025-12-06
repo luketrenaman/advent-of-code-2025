@@ -1,6 +1,7 @@
 package com.github.luketrenaman.aoc2025
 
 import java.io.File
+import kotlin.math.abs
 
 class Day1 {
     fun part1(input: File): Int {
@@ -26,6 +27,23 @@ class Day1 {
                 current = (current + max + multiplier) % max
                 if (current == 0) pwd++
             }
+        }
+        return pwd
+    }
+    fun part2Optimized(input: File): Int {
+        var current = 50
+        val max = 100
+        var pwd = 0
+        input.forEachLine { line ->
+            val multiplier = if (line[0] == 'L') -1 else 1
+            val diff = line.drop(1).toInt() * multiplier
+            val div = diff / max
+            val mod = diff % max
+            if(mod + current !in 0..100 || current == 0){
+                pwd++
+            }
+            pwd += abs(div)
+            current = Math.floorMod(current + mod, max)
         }
         return pwd
     }
