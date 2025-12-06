@@ -40,8 +40,8 @@ class Day2 {
             }.sortedBy { range -> range[0] }
         val ids = mutableSetOf<ULong>();
 
-        for(j in 2..12) {
-            val max = 1000000
+        for(j in 2..7) {
+            val max = 100000
             for(i in 1..max) {
                 if(log10(i.toDouble()) * j > 10){
                     break;
