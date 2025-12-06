@@ -5,11 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50c2dd90-810d-48d9-be66-e728e634f036" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day6.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day6Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day6/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day6/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1/P1-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1/P2-2025-naive.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1/P2-2025-optimal.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2/P1-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2/P2-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/P1-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/P2-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/P1-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/P2-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day5/P1-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day5/P2-2025.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day5/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day5/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day5/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day6.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day6Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day6Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/day6/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day6/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/day6/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day6/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +65,8 @@
     "JUnit.Day1Test.executor": "Run",
     "JUnit.Day2Test.Sanity.executor": "Run",
     "JUnit.Day2Test.executor": "Run",
+    "JUnit.Day5Test.executor": "Run",
+    "JUnit.Day6Test.executor": "Run",
     "JUnit.kotlin in aoc-2025.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -51,7 +76,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/luketrenaman/Desktop/code/advent-of-code/src/test/resources/day5",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,21 +92,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Day6Test">
-    <configuration name="Day1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc-2025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.luketrenaman.aoc2025.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.luketrenaman.aoc2025" />
-      <option name="MAIN_CLASS_NAME" value="com.github.luketrenaman.aoc2025.Day1Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc-2025" />
       <extension name="coverage">
@@ -113,6 +123,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc-2025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.luketrenaman.aoc2025.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.luketrenaman.aoc2025" />
+      <option name="MAIN_CLASS_NAME" value="com.github.luketrenaman.aoc2025.Day5Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day6Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc-2025" />
       <extension name="coverage">
@@ -139,10 +164,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Day6Test" />
+        <item itemvalue="JUnit.Day5Test" />
         <item itemvalue="JUnit.kotlin in aoc-2025" />
         <item itemvalue="JUnit.Day2Test" />
         <item itemvalue="JUnit.Day2Test.Sanity" />
-        <item itemvalue="JUnit.Day1Test" />
       </list>
     </recent_temporary>
   </component>

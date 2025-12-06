@@ -4,8 +4,8 @@ import java.io.File
 
 class Day5 {
     fun part1(input: File): Int {
-        var ranges = mutableListOf<List<String>>()
-        var ids = mutableListOf<String>()
+        val ranges = mutableListOf<List<String>>()
+        val ids = mutableListOf<String>()
         var blank = false
         input.forEachLine { line ->
             if(blank){
@@ -33,9 +33,9 @@ class Day5 {
     fun part2(input: File): Long {
         fun rangeSize(range: List<Long>): Long = range[1] - range[0] + 1
 
-        var ranges = mutableListOf<List<Long>>()
-        var processedRanges = mutableListOf<MutableList<Long>>()
-        var ids = mutableListOf<String>()
+        val ranges = mutableListOf<List<Long>>()
+        val processedRanges = mutableListOf<MutableList<Long>>()
+        val ids = mutableListOf<String>()
         var blank = false
         input.forEachLine { line ->
             if(blank){
@@ -50,8 +50,8 @@ class Day5 {
         }
         var fresh = 0L
         for(range in ranges){
-            var containedInRanges = mutableListOf<MutableList<Long>>()
-            var replacement = range.toMutableList()
+            val containedInRanges = mutableListOf<MutableList<Long>>()
+            val replacement = range.toMutableList()
             var oldSize = 0L
             for(pr in processedRanges){
                 if(

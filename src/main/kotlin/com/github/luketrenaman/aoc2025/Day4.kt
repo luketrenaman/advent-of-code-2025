@@ -64,7 +64,7 @@ class Day4 {
 
         var rolls = 0
 
-        var removed = 0
+        var removed: Int
         do {
             removed = 0
             for (i in 0 until rows) {
@@ -77,7 +77,6 @@ class Day4 {
             }
             rolls += removed
         } while(removed > 0)
-
         return rolls
     }
 }
