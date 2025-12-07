@@ -15,8 +15,8 @@ class Day7 {
         for(row in grid.indices){
             for(col in grid[0].indices){
                 if(grid[row][col] == 'S'){
-                    next.push(Pair(row, col))
-                    counts[Pair(row, col)] = 1
+                    next.push(row to col)
+                    counts[row to col] = 1
                 }
             }
         }
@@ -32,13 +32,13 @@ class Day7 {
         while(next.isNotEmpty()){
             val loc = next.pop()
             val currentCount = counts[loc]!!
-            val down = Pair(loc.first+1, loc.second)
+            val down = (loc.first + 1) to loc.second
             if(!safeBoundsCheck(down.first, down.second)){
                 continue
             }
             if(grid[down.first][down.second] == '^'){
-                inc(Pair(down.first, down.second-1), currentCount)
-                inc(Pair(down.first, down.second+1), currentCount)
+                inc(down.first to (down.second - 1), currentCount)
+                inc(down.first to (down.second + 1), currentCount)
                 splits += currentCount
             } else{
                 inc(down, currentCount)
@@ -56,8 +56,8 @@ class Day7 {
         for(row in grid.indices){
             for(col in grid[0].indices){
                 if(grid[row][col] == 'S'){
-                    next.add(Pair(row, col))
-                    counts[Pair(row, col)] = 1
+                    next.add(row to col)
+                    counts[row to col] = 1
                 }
             }
         }
@@ -74,7 +74,7 @@ class Day7 {
         while(next.isNotEmpty()){
             val loc = next.remove()
             val currentCount = counts[loc]!!
-            val down = Pair(loc.first+1, loc.second)
+            val down = (loc.first + 1) to loc.second
             if(down.first == rows){
                 splits += currentCount
             }
@@ -82,20 +82,12 @@ class Day7 {
                 continue
             }
             if(grid[down.first][down.second] == '^'){
-                inc(Pair(down.first, down.second-1), currentCount)
-                inc(Pair(down.first, down.second+1), currentCount)
+                inc(down.first to (down.second - 1), currentCount)
+                inc(down.first to (down.second + 1), currentCount)
             } else{
                 inc(down, currentCount)
             }
         }
-//        val debugCounts = Array(rows) {Array(cols) {0} }
-//        counts.forEach{
-//            pair -> debugCounts[pair.key.first][pair.key.second] = pair.value
-//        }
-//        debugCounts.forEach {
-//            it.forEach { print("$it") }
-//            println()
-//        }
         return splits
     }
 }
