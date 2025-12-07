@@ -1,45 +1,28 @@
 package com.github.luketrenaman.aoc2025
 
+import com.github.luketrenaman.aoc2025.util.assertPartEquals
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions.assertEquals
-import java.io.File
 
 class Day4Test {
     @Test fun `Part 1 Example`(){
-        assertEquals(
-            13,
-            Day4().part1(File("src/test/resources/day4/example.txt"))
-        )
+        assertPartEquals(13, "day4", "example", Day4()::part1)
     }
     @Test fun `Part 1 Solution`(){
-        assertEquals(
-            1537,
-            Day4().part1(File("src/test/resources/day4/input.txt"))
-        )
+        assertPartEquals(1537, "day4", "input", Day4()::part1)
     }
     @Test fun `Part 2 Example`(){
-        assertEquals(
-            43,
-            Day4().part2(File("src/test/resources/day4/example.txt"))
-        )
+        assertPartEquals(43, "day4", "example", Day4()::part2)
     }
     @Test fun `Part 2 Solution`(){
-        assertEquals(
-            8707,
-            Day4().part2(File("src/test/resources/day4/input.txt"))
-        )
+        assertPartEquals(8707, "day4", "input", Day4()::part2)
     }
     @Test fun `Part 2 Optimized Example`(){
-        assertEquals(
-            43,
-            Day4().part2Optimized(File("src/test/resources/day4/example.txt"))
-        )
+        assertPartEquals(43, "day4", "example", Day4()::part2Optimized)
     }
     @Test fun `Part 2 Optimized Solution`(){
-        assertEquals(
-            8707,
-            Day4().part2Optimized(File("src/test/resources/day4/input.txt"))
-        )
+        assertPartEquals(8707, "day4", "input", Day4()::part2Optimized)
     }
 }
+
+
 

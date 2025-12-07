@@ -1,36 +1,25 @@
 package com.github.luketrenaman.aoc2025
 
-import org.junit.jupiter.api.Assertions.assertEquals
+import com.github.luketrenaman.aoc2025.util.assertPartEquals
 import org.junit.jupiter.api.Test
-import java.io.File
 
 class Day10Test {
     @Test fun `Part 1 Example`(){
-        assertEquals(
-            0L,
-            Day10().part1(File("src/test/resources/day10/example.txt"))
-        )
+        assertPartEquals(0L, "day10", "example", Day10()::part1)
     }
 
     @Test fun `Part 1 Solution`(){
-        assertEquals(
-            0L,
-            Day10().part1(File("src/test/resources/day10/input.txt"))
-        )
+        assertPartEquals(0L, "day10", "input", Day10()::part1)
     }
 
     @Test fun `Part 2 Example`(){
-        assertEquals(
-            0L,
-            Day10().part2(File("src/test/resources/day10/example.txt"))
-        )
+        assertPartEquals(0L, "day10", "example", Day10()::part2)
     }
 
     @Test fun `Part 2 Solution`(){
-        assertEquals(
-            0L,
-            Day10().part2(File("src/test/resources/day10/input.txt"))
-        )
+        assertPartEquals(0L, "day10", "input", Day10()::part2)
     }
 }
+
+
 
