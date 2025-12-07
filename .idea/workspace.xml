@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="50c2dd90-810d-48d9-be66-e728e634f036" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day7Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day7Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/luketrenaman/aoc2025/Day7Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/luketrenaman/aoc2025/Day7Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/example.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,21 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc-2025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.luketrenaman.aoc2025.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.luketrenaman.aoc2025" />
-      <option name="MAIN_CLASS_NAME" value="com.github.luketrenaman.aoc2025.Day4Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day7Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc-2025" />
       <extension name="coverage">
@@ -158,13 +144,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="resources in aoc-2025" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc-2025" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/resources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.kotlin in aoc-2025" />
+        <item itemvalue="JUnit.resources in aoc-2025" />
         <item itemvalue="JUnit.Day7Test" />
         <item itemvalue="JUnit.Day8Test" />
         <item itemvalue="JUnit.Day2Test" />
-        <item itemvalue="JUnit.Day4Test" />
       </list>
     </recent_temporary>
   </component>
