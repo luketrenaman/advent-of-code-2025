@@ -28,7 +28,7 @@ class Day7Test {
 
     @Test fun `Part 2 Solution`(){
         assertEquals(
-            0L,
+            76624086587804L,
             Day7().part2(File("src/test/resources/day7/input.txt"))
         )
     }

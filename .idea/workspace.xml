@@ -7,12 +7,7 @@
     <list default="true" id="50c2dd90-810d-48d9-be66-e728e634f036" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/luketrenaman/aoc2025/Day7.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day7Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/github/luketrenaman/aoc2025/Day7Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day7/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day7/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/luketrenaman/aoc2025/Day7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/luketrenaman/aoc2025/Day7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/luketrenaman/aoc2025/Day7Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/luketrenaman/aoc2025/Day7Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/day7/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/day7/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +71,9 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/luketrenaman/Desktop/code/advent-of-code/src/test/resources/day5",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
@@ -91,7 +89,7 @@
       <recent name="com.github.luketrenaman.aoc2025.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day7Test">
+  <component name="RunManager" selected="JUnit.kotlin in aoc-2025">
     <configuration name="Day2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc-2025" />
       <extension name="coverage">
@@ -162,9 +160,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.kotlin in aoc-2025" />
         <item itemvalue="JUnit.Day7Test" />
         <item itemvalue="JUnit.Day8Test" />
-        <item itemvalue="JUnit.kotlin in aoc-2025" />
         <item itemvalue="JUnit.Day2Test" />
         <item itemvalue="JUnit.Day4Test" />
       </list>
