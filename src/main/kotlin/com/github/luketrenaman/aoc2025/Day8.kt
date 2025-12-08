@@ -7,7 +7,7 @@ class Day8 {
     data class WeightedEdge(val edge: Pair<Int, Int>, val weight: Double)
     fun sqd(x: Double,y: Double) = (x-y) * (x-y)
     fun dist(coord1: List<Int>, coord2: List<Int>): Double =
-        sqrt(coord1.zip(coord2).sumOf { sqd(it.first.toDouble(), it.second.toDouble()) })
+        coord1.zip(coord2).sumOf { sqd(it.first.toDouble(), it.second.toDouble()) }
     fun part1(input: File): Long {
         val coords = input.readLines().map{ line -> line.split(",").map{it.toInt()}}
         val edges = mutableListOf<WeightedEdge>()
@@ -29,7 +29,6 @@ class Day8 {
             }
             edgesToAdd--
         }
-        //println(trees)
         return trees.map{it.size.toLong()}.sortedDescending().take(3).reduce(Long::times)
     }
     fun part2(input: File): Long {
