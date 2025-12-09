@@ -52,11 +52,14 @@ class Day9 {
             for(x in minX..maxX){
                 for(y in minY..maxY){
                     boundary.add(Point(x,y))
-                    val list = boundaryMap.getOrDefault(x, mutableListOf())
-                    list.add(Point(x,y))
+                    if(!boundaryMap.containsKey(x)){
+                        boundaryMap[x] = mutableListOf()
+                    }
+                    boundaryMap[x]!!.add(Point(x,y))
                 }
             }
         }
+        //println(boundaryMap)
 
         fun isInBoundary(p: Point): Boolean{
             if(boundary.contains(p)) return true
