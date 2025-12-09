@@ -39,7 +39,7 @@ class Day9 {
         // I hope its not convex hull
         // What if we just checked, for each coordinate in our guess, whether it was within some other points
         // We could use traversal or we could do a naive approach of just seeing if there are orthongonally aligned rects
-        val safePoints = mutableSetOf<Point>()
+        val boundary = mutableSetOf<Point>()
         for(i in points.indices){
             val next = (i+1) % points.size
             val p1 = points[i]
@@ -50,27 +50,27 @@ class Day9 {
             val maxY = max(p1.y, p2.y)
             for(x in minX..maxX){
                 for(y in minY..maxY){
-                    safePoints.add(Point(x,y))
+                    boundary.add(Point(x,y))
                 }
             }
         }
 
         // Print grid if not exactly 496 coordinates
         if (points.size != 496) {
-            val minX = safePoints.minOf { it.x }
-            val maxX = safePoints.maxOf { it.x }
-            val minY = safePoints.minOf { it.y }
-            val maxY = safePoints.maxOf { it.y }
+            val minX = boundary.minOf { it.x }
+            val maxX = boundary.maxOf { it.x }
+            val minY = boundary.minOf { it.y }
+            val maxY = boundary.maxOf { it.y }
 
             println("SafePoints Grid (${maxX - minX + 1} x ${maxY - minY + 1}):")
             println("X range: $minX to $maxX")
             println("Y range: $minY to $maxY")
-            println("Total safe points: ${safePoints.size}")
+            println("Total safe points: ${boundary.size}")
             println()
 
             for (y in minY..maxY) {
                 for (x in minX..maxX) {
-                    if (safePoints.contains(Point(x, y))) {
+                    if (boundary.contains(Point(x, y))) {
                         print("#")
                     } else {
                         print(".")
@@ -80,7 +80,15 @@ class Day9 {
             }
             println()
         }
-
+        fun isInBoundary(p: Point): Boolean{
+            var passes = 0
+            for(i in p.y..100000){
+                if(boundary.contains(Point(p.x, i)) && !boundary.contains(Point(p.x, i+1))){
+                    passes++
+                }
+            }
+            return passes % 2 == 1
+        }
         var largest = 0L
         for (p1 in points) {
             for (p2 in points) {
@@ -88,11 +96,17 @@ class Day9 {
                 val minY = min(p1.y, p2.y)
                 val maxX = max(p1.x, p2.x)
                 val maxY = max(p1.y, p2.y)
+                var isSafe = true
+                for(x in minX..maxX){
+                    if(!isInBoundary(Point(x, minY))) isSafe = false
+                    if(!isInBoundary(Point(x, maxY))) isSafe = false
+                }
+                for(y in minY..maxY){
+                    if(!isInBoundary(Point(minX, y))) isSafe = false
+                    if(!isInBoundary(Point(maxX, y))) isSafe = false
+                }
                 if (
-                    safePoints.contains(Point(minX, minY)) &&
-                    safePoints.contains(Point(maxX, minY)) &&
-                    safePoints.contains(Point(minX, maxY)) &&
-                    safePoints.contains(Point(maxX, maxY))
+                    isSafe
                 ) {
                     val l = abs(p1.x - p2.x) + 1
                     val w = abs(p1.y - p2.y) + 1
