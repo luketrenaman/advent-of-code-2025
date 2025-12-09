@@ -55,6 +55,27 @@ class Day9 {
             }
         }
 
+        fun isInBoundary(p: Point): Boolean{
+            if(boundary.contains(p)) return true
+            var passes = 0
+            for(i in p.y..100000){
+                if(boundary.contains(Point(p.x, i))){
+                    passes++
+                }
+            }
+            return passes % 2 == 1
+        }
+        fun checkIsSafe(bl: Point, tr: Point): Boolean{
+            for(x in bl.x..tr.x){
+                if(!isInBoundary(Point(x, bl.y))) return false
+                if(!isInBoundary(Point(x, tr.y))) return false
+            }
+            for(y in bl.y..tr.y){
+                if(!isInBoundary(Point(bl.x, y))) return false
+                if(!isInBoundary(Point(tr.x, y))) return false
+            }
+            return true
+        }
         // Print grid if not exactly 496 coordinates
         if (points.size != 496) {
             val minX = boundary.minOf { it.x }
@@ -70,7 +91,7 @@ class Day9 {
 
             for (y in minY..maxY) {
                 for (x in minX..maxX) {
-                    if (boundary.contains(Point(x, y))) {
+                    if (checkIsSafe(Point(x, y), Point(x,y))) {
                         print("#")
                     } else {
                         print(".")
@@ -80,15 +101,6 @@ class Day9 {
             }
             println()
         }
-        fun isInBoundary(p: Point): Boolean{
-            var passes = 0
-            for(i in p.y..100000){
-                if(boundary.contains(Point(p.x, i)) && !boundary.contains(Point(p.x, i+1))){
-                    passes++
-                }
-            }
-            return passes % 2 == 1
-        }
         var largest = 0L
         for (p1 in points) {
             for (p2 in points) {
@@ -96,15 +108,7 @@ class Day9 {
                 val minY = min(p1.y, p2.y)
                 val maxX = max(p1.x, p2.x)
                 val maxY = max(p1.y, p2.y)
-                var isSafe = true
-                for(x in minX..maxX){
-                    if(!isInBoundary(Point(x, minY))) isSafe = false
-                    if(!isInBoundary(Point(x, maxY))) isSafe = false
-                }
-                for(y in minY..maxY){
-                    if(!isInBoundary(Point(minX, y))) isSafe = false
-                    if(!isInBoundary(Point(maxX, y))) isSafe = false
-                }
+                var isSafe = checkIsSafe(Point(minX, minY), Point(maxX, maxY))
                 if (
                     isSafe
                 ) {
