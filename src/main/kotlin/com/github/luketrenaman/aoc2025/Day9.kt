@@ -40,7 +40,6 @@ class Day9 {
         // What if we just checked, for each coordinate in our guess, whether it was within some other points
         // We could use traversal or we could do a naive approach of just seeing if there are orthongonally aligned rects
         val boundary = mutableSetOf<Point>()
-        val boundaryMap = mutableMapOf<Long, MutableList<Point>>()
         for(i in points.indices){
             val next = (i+1) % points.size
             val p1 = points[i]
@@ -52,20 +51,13 @@ class Day9 {
             for(x in minX..maxX){
                 for(y in minY..maxY){
                     boundary.add(Point(x,y))
-                    if(!boundaryMap.containsKey(x)){
-                        boundaryMap[x] = mutableListOf()
-                    }
-                    boundaryMap[x]!!.add(Point(x,y))
                 }
             }
         }
         //println(boundaryMap)
 
         fun isInBoundary(p: Point): Boolean{
-            if(boundary.contains(p)) return true
-            val amt = boundaryMap[p.x]?.filter{it.y >= p.y}?.size
-            if(amt == null) return false
-            return amt % 2 == 1
+            
         }
         fun checkIsSafe(bl: Point, tr: Point): Boolean{
             for(x in bl.x..tr.x){
@@ -128,6 +120,7 @@ class Day9 {
         // 93215 * 1232 = 114840880 too low
         // 93215 * 1231 = 114747665
         // 93214 * 1232 = 114839648
+        // 4630762112 isn't right
         return largest
     }
 }
