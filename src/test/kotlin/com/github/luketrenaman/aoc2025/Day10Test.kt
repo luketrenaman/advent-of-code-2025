@@ -15,10 +15,9 @@ class Day10Test {
     @Test fun `Part 2 Example`(){
         assertPartEquals(33L, "day10", "example", Day10()::part2)
     }
-
-//    @Test fun `Part 2 Solution`(){
-//        assertPartEquals(0L, "day10", "input", Day10()::part2)
-//    }
+    @Test fun `Part 2 Solution`(){
+        assertPartEquals(20172L, "day10", "input", Day10()::part2)
+    }
 }
 
 
