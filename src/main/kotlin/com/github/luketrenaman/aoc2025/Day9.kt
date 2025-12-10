@@ -67,26 +67,18 @@ class Day9 {
             yToX[p.y]?.find { it >= p.x } != null &&
             yToX[p.y]?.find { it <= p.x } != null
         )
-        fun isInBoundaryWithSideEffects(p: Point): Boolean{
-            val isIn = isInBoundary(p)
-            if(isIn){
-                boundary.add(p)
-            }
-            return isIn
-        }
         fun checkIsSafe(bl: Point, tr: Point): Boolean{
             for(x in bl.x..tr.x){
-                if(!isInBoundaryWithSideEffects(Point(x, bl.y))) return false
-                if(!isInBoundaryWithSideEffects(Point(x, tr.y))) return false
+                if(!isInBoundary(Point(x, bl.y))) return false
+                if(!isInBoundary(Point(x, tr.y))) return false
             }
             for(y in bl.y..tr.y){
-                if(!isInBoundaryWithSideEffects(Point(bl.x, y))) return false
-                if(!isInBoundaryWithSideEffects(Point(tr.x, y))) return false
+                if(!isInBoundary(Point(bl.x, y))) return false
+                if(!isInBoundary(Point(tr.x, y))) return false
             }
             return true
         }
         // Print grid if not exactly 496 coordinates
-        var largest = 0L
         val rectangles = mutableListOf<Rectangle>()
         for (p1 in points) {
             for (p2 in points) {
@@ -99,15 +91,6 @@ class Day9 {
                 rectangles.add(Rectangle(Point(minX, minY), Point(maxX, maxY), l*w))
             }
         }
-        var progress = 0
-        for(rectangle in rectangles.sortedByDescending{ it.area }){
-            if(progress % 1000 == 0) println("${progress}/${rectangles.size}")
-            progress++
-            if(checkIsSafe(rectangle.min, rectangle.max)){
-                return rectangle.area
-            }
-        }
-        return 0L
-        //return rectangles.sortedByDescending{ it.area }.find{checkIsSafe(it.min, it.max)}!!.area
+        return rectangles.sortedByDescending{ it.area }.find{checkIsSafe(it.min, it.max)}!!.area
     }
 }
