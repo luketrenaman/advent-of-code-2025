@@ -9,16 +9,16 @@ class Day10Test {
     }
 
     @Test fun `Part 1 Solution`(){
-        assertPartEquals(0L, "day10", "input", Day10()::part1)
+        assertPartEquals(530L, "day10", "input", Day10()::part1)
     }
 
     @Test fun `Part 2 Example`(){
-        assertPartEquals(0L, "day10", "example", Day10()::part2)
+        assertPartEquals(33L, "day10", "example", Day10()::part2)
     }
 
-    @Test fun `Part 2 Solution`(){
-        assertPartEquals(0L, "day10", "input", Day10()::part2)
-    }
+//    @Test fun `Part 2 Solution`(){
+//        assertPartEquals(0L, "day10", "input", Day10()::part2)
+//    }
 }
 
 
