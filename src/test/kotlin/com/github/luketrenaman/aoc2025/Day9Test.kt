@@ -17,7 +17,7 @@ class Day9Test {
     }
 
     @Test fun `Part 2 Solution`(){
-        assertPartEquals(0L, "day9", "input", Day9()::part2)
+        assertPartEquals(1577956170L, "day9", "input", Day9()::part2)
     }
     @Test fun `Part 2 U-Shape`(){
         assertPartEquals(12L, "day9", "u-shape", Day9()::part2)
