@@ -67,14 +67,21 @@ class Day9 {
             yToX[p.y]?.find { it >= p.x } != null &&
             yToX[p.y]?.find { it <= p.x } != null
         )
+        fun isInBoundaryWithSideEffects(p: Point): Boolean{
+            val isIn = isInBoundary(p)
+            if(isIn){
+                boundary.add(p)
+            }
+            return isIn
+        }
         fun checkIsSafe(bl: Point, tr: Point): Boolean{
             for(x in bl.x..tr.x){
-                if(!isInBoundary(Point(x, bl.y))) return false
-                if(!isInBoundary(Point(x, tr.y))) return false
+                if(!isInBoundaryWithSideEffects(Point(x, bl.y))) return false
+                if(!isInBoundaryWithSideEffects(Point(x, tr.y))) return false
             }
             for(y in bl.y..tr.y){
-                if(!isInBoundary(Point(bl.x, y))) return false
-                if(!isInBoundary(Point(tr.x, y))) return false
+                if(!isInBoundaryWithSideEffects(Point(bl.x, y))) return false
+                if(!isInBoundaryWithSideEffects(Point(tr.x, y))) return false
             }
             return true
         }
