@@ -17,7 +17,7 @@ class Day11Test {
     }
 
     @Test fun `Part 2 Solution`(){
-        assertPartEquals(0L, "day11", "input", Day11()::part2)
+        assertPartEquals(377452269415704L, "day11", "input", Day11()::part2)
     }
     @Test fun `Part 2 Example 8 paths`(){
         assertPartEquals(8L, "day11", "example-8-paths", Day11()::part2)

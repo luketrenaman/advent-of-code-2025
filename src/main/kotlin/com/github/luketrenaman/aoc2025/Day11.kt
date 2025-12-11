@@ -5,6 +5,31 @@ import java.util.*
 
 
 class Day11 {
+    fun performTraversalOld(start: String, end: String, adj: Map<String, List<String>>): Long{
+        var next: Queue<String> = LinkedList()
+        val counts = mutableMapOf<String, Long>()
+        fun inc(key: String, by: Long) {
+            if (counts.contains(key)) {
+                counts[key] = counts[key]!! + by
+            } else {
+                counts[key] = by
+                next.add(key)
+            }
+        }
+        next.add(start)
+        counts[start] = 1
+        while(next.isNotEmpty()){
+            val loc = next.remove()
+            val currentCount = counts[loc]!!
+            if(adj.contains(loc)) {
+                for (child in adj[loc]!!) {
+                    inc(child, currentCount)
+                }
+            }
+        }
+        if(counts.contains(end)) return counts[end]!!
+        return 0
+    }
     fun performTraversal(start: String, end: String, list: List<String>, adj: Map<String, List<String>>): Long{
         val counts = mutableMapOf<String, Long>()
         for(node in list){
@@ -72,9 +97,7 @@ class Day11 {
     fun part1(input: File): Long {
         val grid = input.readLines()
         val adj = grid.map { it.split(":") }.associate { it[0] to it[1].trim().split(" ") }
-        // TODO: fix
-        return 0L
-        //return performTraversal("you", "out", adj)
+        return performTraversalOld("you", "out",adj)
     }
     fun part2(input: File): Long {
         val grid = input.readLines()
