@@ -27,7 +27,11 @@ class Day11 {
                     inc(child, currentCount)
                 }
             }
+            println(loc)
+            println(counts)
         }
+        println("${start} -> ${end}")
+        println(counts)
         if(counts.contains(end)) return counts[end]!!
         return 0
     }
@@ -57,6 +61,8 @@ class Day11 {
          * then, we reach the output
          * so we are computing the unique ways to reach each relevant point, then multioplying together
          */
+        //println(adj)
+
         println("----------")
 
         performTraversal("svr", "fft", adj)

@@ -22,6 +22,9 @@ class Day11Test {
     @Test fun `Part 2 Example 8 paths`(){
         assertPartEquals(8L, "day11", "example-8-paths", Day11()::part2)
     }
+    @Test fun `Part 2 Example 6 paths`(){
+        assertPartEquals(8L, "day11", "example-6-toplogy", Day11()::part2)
+    }
     @Test fun `Part 2 Example 3 paths`(){
         assertPartEquals(3L, "day11", "example-3-paths", Day11()::part2)
     }
