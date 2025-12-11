@@ -103,7 +103,6 @@ class Day10 {
 
 
             var result = model.minimise()
-            BasicLogger.debug(result)
             output += vars.sumOf{it.value}.toLong()
 
         }
