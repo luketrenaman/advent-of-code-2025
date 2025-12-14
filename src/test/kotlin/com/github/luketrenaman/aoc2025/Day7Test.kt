@@ -1,6 +1,8 @@
 package com.github.luketrenaman.aoc2025
 
+import com.github.luketrenaman.aoc2025.util.TestConfig.SOLUTION_REPEAT_COUNT
 import com.github.luketrenaman.aoc2025.util.assertPartEquals
+import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 
 class Day7Test {
@@ -8,7 +10,7 @@ class Day7Test {
         assertPartEquals(21, "day7", "example", Day7()::part1)
     }
 
-    @Test fun `Part 1 Solution`(){
+    @RepeatedTest(SOLUTION_REPEAT_COUNT) fun `Part 1 Solution`(){
         assertPartEquals(1656, "day7", "input", Day7()::part1)
     }
 
@@ -16,7 +18,7 @@ class Day7Test {
         assertPartEquals(40L, "day7", "example", Day7()::part2)
     }
 
-    @Test fun `Part 2 Solution`(){
+    @RepeatedTest(SOLUTION_REPEAT_COUNT) fun `Part 2 Solution`(){
         assertPartEquals(76624086587804L, "day7", "input", Day7()::part2)
     }
 }
