@@ -4,7 +4,7 @@ import java.io.File
 
 class Day12 {
     fun String.toIntArray(): IntArray = this.map{if(it == '#') 1 else 0}.toIntArray()
-    data class Grid(val width: Int, val height: Int, val shapeCounts: List<Int>)
+    data class Grid(val height: Int, val width: Int, val shapeCounts: List<Int>)
     fun part1(input: File): Long {
         // There are two filters that can be applied to determine the result of hopefully a lot of these cases
         // "does the bounding box of each input fit inside of the provided grid" this is always 3x3 and is a SUCCESS result
@@ -43,9 +43,10 @@ class Day12 {
             // If there are enough bounding squares for each shape
             numSquares >= it.shapeCounts.sum()
         }
+
         uncheckedGrids.removeAll(safeGrids)
         val unsafeGrids = uncheckedGrids.filter{
-            val totalSize = it.width * it.width
+            val totalSize = it.width * it.height
             val totalSizeUsed = it.shapeCounts
                 .mapIndexed { idx, amount -> counts[idx] * amount }
                 .sum()
@@ -56,6 +57,10 @@ class Day12 {
         println("Unchecked grid count ${uncheckedGrids.size}")
         println("Safe grid count ${safeGrids.size}")
         println("Unsafe grid count ${unsafeGrids.size}")
+
+        // By this point the example has filtered NO grids and the true data has filtered 75% of the grids
+        //uncheckedGrids.forEach{println("${it.height}x${it.width}: ${it.shapeCounts}")}
+        // THIS IS ENOUGH TO SOLVE IT. THE TEST INPUT WORKS WITH THE NAIIVE SOLUTION
 
         return safeGrids.size.toLong()
     }
